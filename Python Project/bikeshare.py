@@ -202,12 +202,12 @@ def user_stats(data_df):
 def main():
     while True:
         city, month, day = get_filters()
-        data_df = load_data(city, month, day)
+        data = load_data(city, month, day)
 
-        time_stats(data_df)
-        station_stats(data_df)
-        trip_duration_stats(data_df)
-        user_stats(data_df)
+        time_stats(data)
+        station_stats(data)
+        trip_duration_stats(data)
+        user_stats(data)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
