@@ -23,9 +23,9 @@ def check_input_validity(choice: str,
         The valid input choice
 
     """
-    while choice not in valid_list:
-        choice = input('Invalid input. Please try another time: ').strip().casefold()
-    return choice
+    while input_choice not in valid_list:
+        input_choice = input('Invalid input. Please try another time: ').strip().casefold()
+    return input_choice
 
 
 def get_filters():
